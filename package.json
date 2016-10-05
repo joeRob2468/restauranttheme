@@ -1,0 +1,23 @@
+{
+  "name": "restauranttheme",
+  "version": "1.0.0",
+  "description": "A simple OctoberCMS theme for a simple website.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joeRob2468/restauranttheme.git"
+  },
+  "author": "John Robert Boyer",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joeRob2468/restauranttheme/issues"
+  },
+  "homepage": "https://github.com/joeRob2468/restauranttheme#readme",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "grunt": "^1.0.1"
+  }
+}

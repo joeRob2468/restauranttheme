@@ -1,0 +1,21 @@
+{
+  "name": "restauranttheme",
+  "description": "A simple OctoberCMS theme for a simple website.",
+  "main": "",
+  "authors": [
+    "John Robert Boyer"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/joeRob2468/restauranttheme",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "themes/restaurant-theme/assets/vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "foundation-sites": "^6.2.3"
+  }
+}
