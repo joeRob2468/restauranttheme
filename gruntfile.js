@@ -21,7 +21,10 @@ module.exports = function(grunt) {
 
         watch: {
           options: {
-            livereload: true,
+            livereload: {
+              host: '0.0.0.0',
+              //port: 35729
+            },
             dateFormat: function(time) {
               grunt.log.writeln('The watch finished in ' + time + 'ms at ' + (new Date()).toString());
               grunt.log.writeln('Waiting for more changes...');
@@ -39,7 +42,7 @@ module.exports = function(grunt) {
               files: ['themes/**/*.css', '!themes/**/main.css']
             },
             html: {
-              files: ['themes/**/*.html']
+              files: ['themes/**/*.htm']
             }, //html
         }, //watch
 

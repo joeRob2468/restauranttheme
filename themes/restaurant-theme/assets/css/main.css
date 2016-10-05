@@ -9388,8 +9388,3 @@ table.hover tr:nth-of-type(even):hover {
 .clearfix::after {
   clear: both;
 }
-
-body {
-  background: #000000;
-  font-size: 2em;
-}
