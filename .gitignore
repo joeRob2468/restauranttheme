@@ -1,7 +1,6 @@
 .DS_Store
 *.log
 node_modules
-storage/combiner/assets
 storage/cms/cache
 storage/cms/twig
 storage/cms/combiner
