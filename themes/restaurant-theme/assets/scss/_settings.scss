@@ -1,3 +1,12 @@
+@import 'fonts';
+
+$font-droid-serif: 'Droid Serif', serif;
+$font-roboto: 'Roboto', sans-serif;
+
+$body-font-family: $font-roboto;
+$header-font-family: $font-droid-serif;
+
+/*
 //  Foundation for Sites Settings
 //  -----------------------------
 //
@@ -563,3 +572,4 @@ $topbar-title-spacing: 1rem;
 $topbar-input-width: 200px;
 $topbar-unstack-breakpoint: medium;
 
+ */
