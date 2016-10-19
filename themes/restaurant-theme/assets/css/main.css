@@ -9956,3 +9956,8 @@ table.hover tr:nth-of-type(even):hover {
 .clearfix::after {
   clear: both;
 }
+
+img.cover {
+  object-fit: cover;
+  font-family: "object-fit: cover;";
+}
