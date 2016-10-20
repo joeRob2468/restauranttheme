@@ -10,14 +10,14 @@ var scripts =
     // initialize vh unit buggyfill for mobile browsers.
     window.viewportUnitsBuggyfill.init();
 
-    // // initialize skrollr if we're not on mobile
-    // if($('.parallax') && !(/Android|iPhone|iPad|iPod|BlackBerry|Windows Phone/i).test(navigator.userAgent || navigator.vendor || window.opera))
-    // {
-    //   var s = skrollr.init({
-    //     forceHeight: false,
-    //     smoothScrolling: false
-    //   });
-    // }
+    // initialize skrollr if we're not on mobile
+    if($('.parallax') && !(/Android|iPhone|iPad|iPod|BlackBerry|Windows Phone/i).test(navigator.userAgent || navigator.vendor || window.opera))
+    {
+      var s = skrollr.init({
+        forceHeight: false,
+        smoothScrolling: false
+      });
+    }
 
     // smoothScroll.init({
     //   selector: 'a', // Selector for links (must be a class, ID, data attribute, or element tag)
