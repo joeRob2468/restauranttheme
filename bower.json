@@ -17,6 +17,7 @@
   ],
   "dependencies": {
     "foundation-sites": "^6.2.3",
-    "object-fit-images": "*"
+    "object-fit-images": "*",
+    "viewport-units-buggyfill": "^0.6.0"
   }
 }
