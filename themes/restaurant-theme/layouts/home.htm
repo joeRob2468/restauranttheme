@@ -1,0 +1,19 @@
+description = "A simple, catch-all layout for most pages."
+
+[editable]
+==
+<!doctype html>
+<html>
+  {% partial "required/head" %}
+
+  <body>
+    
+    {% partial "common/hero" %}
+    
+    {% page %}
+
+    {% partial "common/footer" %}
+  </body>
+
+  {% partial "required/scripts" %}
+</html>

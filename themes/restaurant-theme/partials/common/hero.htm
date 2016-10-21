@@ -1,0 +1,18 @@
+<div class="hero">
+  <img src="https://images.unsplash.com/photo-1443808709349-353c8b390400" 
+    alt="A barside view." 
+    class="background cover parallax"
+    data-center="object-position: 50% 0px"
+    data-top-bottom="object-position: 50% 500px"
+    >
+
+  {% partial "common/navigation" %}
+
+  <div class="content">
+    <div class="row">
+      <div class="large-12 columns text-center">
+        {% component 'editable' file="home/hero.htm" %}
+      </div>
+    </div>
+  </div>
+</div>

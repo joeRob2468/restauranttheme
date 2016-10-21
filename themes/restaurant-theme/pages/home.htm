@@ -1,11 +1,102 @@
 title = "Home"
 url = "/"
-layout = "default"
+layout = "home"
 description = "The home page."
 is_hidden = 0
 ==
-<div class="row">
+<div class="row padded large">
   <div class="large-12 columns text-center">
-    <h1>Hello World</h1>
+    {% component 'editable' file="home/head.htm" %}
+  </div>
+</div>
+
+<div class="container">
+  <img src="https://images.unsplash.com/photo-1473181488821-2d23949a045a" 
+    class="cover background parallax"
+    data-bottom-top="object-position: 50% -250px"
+    data-top-bottom="object-position: 50% 250px"
+    alt="A relaxing image of coffee and a notebook on a wood table.">
+  <div class="row padded huge">
+    <div class="large-12 columns text-center text-white">
+      {% component 'editable' file="home/hero-secondary.htm" %}
+      <br>
+      <a class="button light" href="#">Make A Reservation</a>
+    </div>
+  </div>
+</div>
+
+<div class="row padded large">
+  <div class="large-12 columns">
+    <div class="row">
+      <div class="large-4 columns">
+        <img src="https://images.unsplash.com/photo-1434642295902-4552897cb0f6" class="cover" alt="Cookies!">
+      </div>
+      <div class="large-4 columns">
+        <img src="https://images.unsplash.com/photo-1441122365457-1ae2aba6235c" class="cover" alt="Bun with butter.">
+      </div>
+      <div class="large-4 columns">
+        <img src="https://images.unsplash.com/photo-1446034730750-a0b64d06ad13" class="cover" alt="Sandwich and a beer.">
+      </div>
+    </div>
+    <div class="row padded-top">
+      <div class="large-6 columns">
+        <p>
+          Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Sed posuere consectetur est at lobortis. Maecenas faucibus mollis interdum. Nulla vitae elit libero, a pharetra augue. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
+        </p>
+        <p>
+          Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Aenean lacinia bibendum nulla sed consectetur.
+        </p>
+      </div>
+      <div class="large-6 columns">
+        <p>
+          Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cras mattis consectetur purus sit amet fermentum.
+        </p>
+        <p>
+          Nulla vitae elit libero, a pharetra augue. Maecenas sed diam eget risus varius blandit sit amet non magna. Cras mattis consectetur purus sit amet fermentum. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="large-12 columns text-center">
+        <a class="button" href="#">View Menus</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <img src="{{'assets/img/the-staff-bg.jpg'|theme}}" 
+    class="cover background parallax"
+    data-bottom-top="object-position: 50% -250px"
+    data-top-bottom="object-position: 50% 250px"
+    alt="A relaxing image of coffee and a notebook on a wood table.">
+  <div class="row padded huge">
+    <div class="large-12 columns text-center text-white">
+      {% component 'editable' file="home/hero-staff.htm" %}
+    </div>
+  </div>
+</div>
+
+<div class="row padded large">
+  <div class="row">
+    <div class="large-4 columns">
+      {% component 'editable' file="home/staff-1.htm" %}
+    </div>
+    <div class="large-4 columns">
+      {% component 'editable' file="home/staff-2.htm" %}
+    </div>
+    <div class="large-4 columns">
+      {% component 'editable' file="home/staff-3.htm" %}
+    </div>
+  </div>
+
+  <div class="row padded">
+    <div class="large-6 columns">
+      <img src="https://images.unsplash.com/photo-1432139555190-58524dae6a55" alt="Steak and potatoes">
+    </div>
+    <div class="large-6 columns">
+      <img src="https://images.unsplash.com/photo-1429012178110-d7a734a56176" alt="Smoked salmon on rye bread.">
+    </div>
   </div>
 </div>

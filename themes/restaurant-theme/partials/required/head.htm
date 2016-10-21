@@ -3,9 +3,13 @@ description = "The page head. Contains style imports and title information."
 ==
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ this.page.title }} - Restaurant Theme</title>
+  <meta name="description" content="{{ this.page.meta_description|default(this.theme.description) }}">
+  <meta name="keywords" content="{{ this.theme.keywords }}">
+  <meta name="author" content="{{ this.theme.site_author }}">
+  <title>{{ this.theme.site_name|striptags }} - {{ this.page.meta_title|default(this.page.title) }}</title>
+  <link rel="canonical" href="{{ this.page.id|page }}" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
   {% styles %}
   <link href="{{ ['assets/css/main.css']|theme }}" rel="stylesheet">
 </head>

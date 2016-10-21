@@ -3,3 +3,4 @@ description: 'A simple OctoberCMS theme for a simple website.'
 author: 'John Robert Boyer'
 homepage: 'http://www.boyerwebstudios.com'
 code: bws-restaurant-theme
+form: fields.yaml

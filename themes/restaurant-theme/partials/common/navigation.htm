@@ -1,0 +1,12 @@
+<nav class="row">
+  <div class="medium-6 columns text-center medium-text-left">
+    <a href="{{ '/'|app }}" class="logo">{% if this.theme.site_logo %}<img src="{{this.theme.site_logo|theme}}" alt="{{this.theme.site_name}}">{% elseif this.theme.site_name %}{{ this.theme.site_name }}{% else %}THE RESTAURANT{% endif %}</a>
+  </div>
+  <div class="medium-6 columns text-center medium-text-right">
+    <ul>
+      <li><a href="#">Menu</a></li>
+      <li><a href="#">Reservations</a></li>
+      <li><a href="#">Locations</a></li>
+    </ul>
+  </div>
+</nav>
