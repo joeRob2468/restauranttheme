@@ -144,3 +144,9 @@ img.background
     }
   }
 }
+
+// Editable plugin text color fix.
+.redactor-editor p
+{
+  color: #000000 !important;
+}

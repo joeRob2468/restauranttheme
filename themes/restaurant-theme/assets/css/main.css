@@ -10065,3 +10065,7 @@ img.background {
   background: white !important;
   color: #333333;
 }
+
+.redactor-editor p {
+  color: #000000 !important;
+}
