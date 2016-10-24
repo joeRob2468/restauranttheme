@@ -1,17 +1,30 @@
-<div class="hero">
-  <img src="https://images.unsplash.com/photo-1443808709349-353c8b390400" 
-    alt="A barside view." 
+{# 
+
+USAGE: 
+  {% put heroContent %}
+    {% component 'editable' file="path-to-content.htm" %}
+  {% endput %}
+
+  {% partial "common/hero" image=('path-to-image.jpg'|theme) imageAlt="Alt Text" textWhite=false %}
+#}
+
+
+<div class="hero {% if fullheight %} fullheight {% endif %}">
+  {% if image and (image|trim) %}
+  <img src="{{ image }}" 
+    alt="{{ imageAlt }}" 
     class="background cover parallax"
-    data-center="object-position: 50% 0px"
-    data-top-bottom="object-position: 50% 500px"
+    data-top="object-position: 50% -100px"
+    data-top-bottom="object-position: 50% 250px"
     >
+  {% endif %}
 
   {% partial "common/navigation" %}
 
   <div class="content">
     <div class="row">
-      <div class="large-12 columns text-center">
-        {% component 'editable' file="home/hero.htm" %}
+      <div class="large-12 columns text-center {% if textWhite %} text-white {% endif %}">
+        {% placeholder heroContent %}
       </div>
     </div>
   </div>

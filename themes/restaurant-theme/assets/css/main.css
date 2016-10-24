@@ -9958,13 +9958,19 @@ table.hover tr:nth-of-type(even):hover {
 }
 
 .hero {
-  height: 100vh;
-  overflow: visible;
   position: relative;
-  color: #FFFFFF;
 }
 
-.hero .content {
+.hero:not(.fullheight) .content {
+  position: relative;
+  padding: 8em 0;
+}
+
+.hero.fullheight {
+  height: 100vh;
+}
+
+.hero.fullheight .content {
   position: relative;
   top: 45%;
   transform: translateY(-50%);
@@ -10006,7 +10012,7 @@ footer {
 }
 
 .row.padded.huge {
-  padding: 15em 0;
+  padding: 12em 0;
 }
 
 .row.padded-top {
