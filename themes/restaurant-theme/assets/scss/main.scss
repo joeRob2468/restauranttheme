@@ -61,6 +61,36 @@ footer
   color: #FFFFFF;
 }
 
+.instagram
+{
+  .wrapper
+  {
+    background: #FFFFFF;
+  }
+
+  img
+  {
+    height: 400px;
+    width: 100%;
+  }
+
+  .meta
+  {
+    margin-bottom: .5em;
+    color: #AAAAAA;
+  }
+
+  .content
+  {
+    width: 90%;
+    background: #FFFFFF;
+    position: relative;
+    top: -50px;
+    margin: 0px auto;
+    padding: 3em 3em 0 3em;
+  }
+}
+
 // Utility Classes //
 
 .row.padded
@@ -104,6 +134,19 @@ footer
 .container
 {
   position: relative;
+}
+
+.wrapper
+{
+  &.background-white
+  {
+    background: #FFFFFF;
+  }
+
+  &.background-off-white
+  {
+    background: #F0F0F0;
+  }
 }
 
 img.cover

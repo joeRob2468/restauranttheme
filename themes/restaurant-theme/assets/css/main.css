@@ -10003,6 +10003,29 @@ footer {
   color: #FFFFFF;
 }
 
+.instagram .wrapper {
+  background: #FFFFFF;
+}
+
+.instagram img {
+  height: 400px;
+  width: 100%;
+}
+
+.instagram .meta {
+  margin-bottom: .5em;
+  color: #AAAAAA;
+}
+
+.instagram .content {
+  width: 90%;
+  background: #FFFFFF;
+  position: relative;
+  top: -50px;
+  margin: 0px auto;
+  padding: 3em 3em 0 3em;
+}
+
 .row.padded {
   padding: 3em 0;
 }
@@ -10033,6 +10056,14 @@ footer {
 
 .container {
   position: relative;
+}
+
+.wrapper.background-white {
+  background: #FFFFFF;
+}
+
+.wrapper.background-off-white {
+  background: #F0F0F0;
 }
 
 img.cover {

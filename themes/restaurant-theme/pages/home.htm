@@ -18,11 +18,21 @@ is_hidden = 0
 {% put imageSectionContent %}
   {% component 'editable' file="home/hero-secondary.htm" %}
   <br>
-  <a class="button light" href="#">Make A Reservation</a>
+  <a class="button light" href="#">View Our Menu</a>
+  <a class="button light" href="#">View Specials</a>
 {% endput %}
 {% partial "imagesection" image="https://images.unsplash.com/photo-1473181488821-2d23949a045a" textWhite=true imageAlt="Table" %}
 
-<div class="row padded large">
+<div class="wrapper background-off-white">
+  <div class="row padded">
+    <div class="large-12 columns text-center">
+      <h1>Recent News</h1>
+      {% partial "instagram" %}
+    </div>
+  </div>
+</div>
+
+{# <div class="row padded large">
   <div class="large-12 columns">
     <div class="row">
       <div class="large-4 columns">
@@ -60,7 +70,7 @@ is_hidden = 0
       </div>
     </div>
   </div>
-</div>
+</div> #}
 
 {% put imageSectionContent %}
   {% component 'editable' file="home/hero-staff.htm" %}
