@@ -1,0 +1,6 @@
+plugin:
+    name: 'quindarious.utilitycomponents::lang.plugin.name'
+    description: 'quindarious.utilitycomponents::lang.plugin.description'
+    author: Quindarious
+    icon: oc-icon-wrench
+    homepage: ''

@@ -1,0 +1,24 @@
+{% set self = __SELF__ %}
+
+{% if self.properties.page == 'none' %}
+  {% set url = self.properties.url %}
+{% else %}
+  {% set url = self.properties.page|page %}
+
+  {# if the url is empty, maybe we linked to a static page. Try that. #}
+  {% if not url %}
+    {% set url = self.properties.page|staticPage %}
+  {% endif %}
+{% endif %}
+
+{% if self.properties.alignment != 'none' %}
+<div class="row">
+  <div class="small-12 columns {{ self.properties.alignment }}">
+{% endif %}
+
+    <a href="{{ url }}" class="button {{ self.properties.type }} {{ self.properties.color }}">{{ self.properties.text }}</a>
+
+{% if self.properties.alignment != 'none' %}
+  </div>
+</div>
+{% endif %}

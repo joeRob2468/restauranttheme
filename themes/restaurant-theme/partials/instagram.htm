@@ -1,59 +1,33 @@
 <div class="row padded instagram" data-equalizer>
+
+{% for m in instagramFeed.media %}
   <div class="large-6 columns text-left" >
     <div class="wrapper" data-equalizer-watch>
-      <a href="#" target="_blank">
-        <img class="cover" src="https://scontent-dft4-2.cdninstagram.com/t51.2885-15/e35/13722192_1041749479227089_997121418_n.jpg?ig_cache_key=MTMwMjk2NTk5MTk4MjkwMjUxMg%3D%3D.2" alt="bakery">
+      <a href="{{ m.getLink() }}" target="_blank">
+        <img class="cover" src="{{ m.getStandardResImage().url }}" alt="bakery">
       </a>
 
       <div class="content">
         <div class="row meta">
           <div class="small-6 columns text-left">
-            <a href="#">❤ 23 likes</a>
+            ❤ {{ m.getLikesCount() }} likes
           </div>
           <div class="small-6 columns text-right">
-            25m
+            {{ m.getCreatedTime() | timestamptorelative }}
           </div>
         </div>
         <p>
-          Wowee! Miss Maureen Fiudo, Mary Kay Consultant Extraordinaire, just honored us as business of the week!! (And check out this goodie stash!!) You can't go wrong visiting her about your personal care needs. She's kind, compassionate, generous of heart, and an expert in her field. <a href="#">#TL</a> <a href="#">#LindenSquareDowntownGladstone</a>
+         {{ m.getCaption().text | linkify }}
         </p>
 
         <div class="row">
           <div class="large-12 columns text-center">
-            <a href="#" target="_blank" class="button">View on Instagram</a>
+            <a href="{{ m.getLink() }}" target="_blank" class="button">View on Instagram</a>
           </div>
         </div>
       </div>
     </div>
   </div>
+{% endfor %}
 
-
-
-  <div class="large-6 columns text-left">
-    <div class="wrapper" data-equalizer-watch>
-      <a href="#" target="_blank">
-        <img class="cover" src="https://scontent-dft4-2.cdninstagram.com/t51.2885-15/e35/13388688_1720555274853151_684934099_n.jpg?ig_cache_key=MTI3MTc2MzQ2NjY2MjIyMjUwMA%3D%3D.2" alt="bakery">
-      </a>
-
-      <div class="content">
-        <div class="row meta">
-          <div class="small-6 columns text-left">
-            <a href="#">❤ 25 likes</a>
-          </div>
-          <div class="small-6 columns text-right">
-            2h
-          </div>
-        </div>
-        <p>
-          Had such a great shower yesterday. Can't believe how loved he already is. Can't wait for myself &amp; everyone to meet baby Holden 😊
-        </p>
-
-        <div class="row">
-          <div class="large-12 columns text-center">
-            <a href="#" target="_blank" class="button">View on Instagram</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
 </div>
