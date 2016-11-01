@@ -7,32 +7,15 @@ is_hidden = 0
 {% put heroContent %}
   {% component 'editable' file="home/hero.htm" %}
 {% endput %}
-{% partial "common/hero" fullheight=true image="https://images.unsplash.com/photo-1443808709349-353c8b390400" imageAlt="Blue Plate" textWhite=true %}
+{% partial "common/hero" fullheight=true image="https://images.unsplash.com/photo-1473340325660-0f786fd1571c" imageAlt="Foood" textWhite=true %}
 
-<div class="row padded large">
+{# <div class="row padded large">
   <div class="large-12 columns text-center">
     {% component 'editable' file="home/head.htm" %}
   </div>
-</div>
+</div> #}
 
-{% put imageSectionContent %}
-  {% component 'editable' file="home/hero-secondary.htm" %}
-  <br>
-  <a class="button light" href="#">View Our Menu</a>
-  <a class="button light" href="#">View Specials</a>
-{% endput %}
-{% partial "imagesection" image="https://images.unsplash.com/photo-1473181488821-2d23949a045a" textWhite=true imageAlt="Table" %}
-
-<div class="wrapper background-off-white">
-  <div class="row padded">
-    <div class="large-12 columns text-center">
-      <h1>Recent News</h1>
-      {% partial "instagram" %}
-    </div>
-  </div>
-</div>
-
-{# <div class="row padded large">
+<div class="row padded large">
   <div class="large-12 columns">
     <div class="row">
       <div class="large-4 columns">
@@ -70,7 +53,23 @@ is_hidden = 0
       </div>
     </div>
   </div>
-</div> #}
+</div>
+
+{% put imageSectionContent %}
+  {% component 'editable' file="home/hero-secondary.htm" %}
+  <br>
+  <a class="button light" href="#">View Our Menu</a>
+  <a class="button light" href="#">View Specials</a>
+{% endput %}
+{% partial "imagesection" image="https://images.unsplash.com/photo-1474635183442-1d29a9be83d3" textWhite=true imageAlt="Table" %}
+
+<div class="wrapper background-off-white">
+  <div class="row padded">
+    <div class="large-12 columns text-center">
+      {% partial "instagram" %}
+    </div>
+  </div>
+</div>
 
 {% put imageSectionContent %}
   {% component 'editable' file="home/hero-staff.htm" %}
