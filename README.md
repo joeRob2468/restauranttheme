@@ -18,3 +18,13 @@ If you plan on using a database, run this command:
 ```shell
 php artisan october:install
 ```
+
+### Important Bugfix Notes
+
+If you're running into a "network is unreachable" error that looks like it's IPv6 related, check if your hosting service supports IPv6. If it doesn't, force curl to use IPv4 by going into ```Vendor/october/rain/src/Network/Http.php```, finding the ```send()``` function, and addding the following configuration setting: 
+```
+// FIX IPv6 ERRORS BY FORCING IPv4 REQUESTS
+if (defined('CURLOPT_IPRESOLVE') && defined('CURL_IPRESOLVE_V4')){
+  curl_setopt($curl, CURLOPT_IPRESOLVE, CURL_IPRESOLVE_V4);
+}
+```
