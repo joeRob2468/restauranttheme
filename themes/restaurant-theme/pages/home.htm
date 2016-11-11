@@ -12,7 +12,7 @@ cache = 10
 {% put heroContent %}
   {% component 'editable' file="home/hero.htm" %}
 {% endput %}
-{% partial "common/hero" fullheight=true image="https://images.unsplash.com/photo-1473340325660-0f786fd1571c" imageAlt="Foood" textWhite=true %}
+{% partial "common/hero" fullheight=true image=('home/hero.jpg'|media) imageAlt="Large Pie" textWhite=true %}
 
 {# <div class="row padded large">
   <div class="large-12 columns text-center">
@@ -24,13 +24,13 @@ cache = 10
   <div class="large-12 columns">
     <div class="row">
       <div class="large-4 columns">
-        <img src="https://images.unsplash.com/photo-1434642295902-4552897cb0f6" class="cover" alt="Cookies!">
+        <img src="{{ 'home/food-1.jpg' | media }}" class="cover" alt="Cookies!">
       </div>
       <div class="large-4 columns">
-        <img src="https://images.unsplash.com/photo-1441122365457-1ae2aba6235c" class="cover" alt="Bun with butter.">
+        <img src="{{ 'home/food-2.jpg' | media }}" class="cover" alt="Bun with butter.">
       </div>
       <div class="large-4 columns">
-        <img src="https://images.unsplash.com/photo-1446034730750-a0b64d06ad13" class="cover" alt="Sandwich and a beer.">
+        <img src="{{ 'home/food-3.jpg' | media }}" class="cover" alt="Sandwich and a beer.">
       </div>
     </div>
     <div class="row padded-top">
@@ -66,7 +66,7 @@ cache = 10
   <a class="button light" href="{{ "menus" | page }}">View Our Menu</a>
   <a class="button light" href="{{ "menus" | page }}">View Specials</a>
 {% endput %}
-{% partial "imagesection" image="https://images.unsplash.com/photo-1474635183442-1d29a9be83d3" textWhite=true imageAlt="Table" %}
+{% partial "imagesection" image=('home/hero-menu.jpg'|media) textWhite=true imageAlt="Table" %}
 
 <div class="wrapper background-off-white">
   <div class="row padded">
@@ -79,7 +79,7 @@ cache = 10
 {% put imageSectionContent %}
   {% component 'editable' file="home/hero-staff.htm" %}
 {% endput %}
-{% partial "imagesection" image=('assets/img/the-staff-bg.jpg'|theme) imageAlt="A relaxing image of coffee and a notebook on a wood table." textWhite=true %}
+{% partial "imagesection" image=('home/hero-staff.jpg'|media) imageAlt="The staff of Laughing Place." textWhite=true %}
 
 <div class="row padded large">
   <div class="row">
@@ -96,10 +96,10 @@ cache = 10
 
   <div class="row padded">
     <div class="large-6 columns">
-      <img src="https://images.unsplash.com/photo-1432139555190-58524dae6a55" alt="Steak and potatoes">
+      <img src="{{ 'home/food-4.jpg' | media }}" alt="Steak and potatoes">
     </div>
     <div class="large-6 columns">
-      <img src="https://images.unsplash.com/photo-1429012178110-d7a734a56176" alt="Smoked salmon on rye bread.">
+      <img src="{{ 'home/food-5.jpg' | media }}" alt="Smoked salmon on rye bread.">
     </div>
   </div>
 </div>
