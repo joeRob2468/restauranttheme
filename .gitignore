@@ -2,4 +2,5 @@
 *.log
 node_modules
 storage/*
+vendor/*
 themes/restaurant-theme/assets/vendor
