@@ -54,7 +54,7 @@ cache = 10
 
     <div class="row">
       <div class="large-12 columns text-center">
-        <a class="button" href="#">View Menus</a>
+        <a class="button" href="{{ "menus" | page }}">View Menus</a>
       </div>
     </div>
   </div>
@@ -63,8 +63,8 @@ cache = 10
 {% put imageSectionContent %}
   {% component 'editable' file="home/hero-secondary.htm" %}
   <br>
-  <a class="button light" href="#">View Our Menu</a>
-  <a class="button light" href="#">View Specials</a>
+  <a class="button light" href="{{ "menus" | page }}">View Our Menu</a>
+  <a class="button light" href="{{ "menus" | page }}">View Specials</a>
 {% endput %}
 {% partial "imagesection" image="https://images.unsplash.com/photo-1474635183442-1d29a9be83d3" textWhite=true imageAlt="Table" %}
 

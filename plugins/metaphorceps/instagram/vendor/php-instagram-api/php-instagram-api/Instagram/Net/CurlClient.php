@@ -29,6 +29,11 @@ class CurlClient implements ClientInterface {
      */
     function __construct(){
         $this->initializeCurl();
+        
+        // FIXES IPv6 ERRORS BY FORCING IPv4 REQUESTS
+        if (defined('CURLOPT_IPRESOLVE') && defined('CURL_IPRESOLVE_V4')){
+          curl_setopt($this->curl, CURLOPT_IPRESOLVE, CURL_IPRESOLVE_V4);
+        }
     }
 
     /**
@@ -42,6 +47,7 @@ class CurlClient implements ClientInterface {
     public function get( $url, array $data = null ){
         curl_setopt( $this->curl, CURLOPT_CUSTOMREQUEST, 'GET' );
         curl_setopt( $this->curl, CURLOPT_URL, sprintf( "%s?%s", $url, http_build_query( $data ) ) );
+
         return $this->fetch();
     }
 

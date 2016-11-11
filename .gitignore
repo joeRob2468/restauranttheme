@@ -1,9 +1,5 @@
 .DS_Store
 *.log
 node_modules
-storage/cms/cache
-storage/cms/twig
-storage/cms/combiner
-storage/framework/cache
-storage/framework/sessions
+storage/*
 themes/restaurant-theme/assets/vendor

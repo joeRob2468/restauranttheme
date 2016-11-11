@@ -242,6 +242,12 @@ class Http
         curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
         curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, false);
         curl_setopt($curl, CURLOPT_SSL_VERIFYHOST, false);
+
+        // FIXES IPv6 ERRORS BY FORCING IPv4 REQUESTS
+        if (defined('CURLOPT_IPRESOLVE') && defined('CURL_IPRESOLVE_V4')){
+          curl_setopt($curl, CURLOPT_IPRESOLVE, CURL_IPRESOLVE_V4);
+        }
+
         if (defined('CURLOPT_FOLLOWLOCATION') && !ini_get('open_basedir')) {
             curl_setopt($curl, CURLOPT_FOLLOWLOCATION, true);
             curl_setopt($curl, CURLOPT_MAXREDIRS, $this->maxRedirects);
