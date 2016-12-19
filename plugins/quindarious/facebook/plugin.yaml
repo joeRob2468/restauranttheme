@@ -1,0 +1,6 @@
+plugin:
+    name: 'quindarious.facebook::lang.plugin.name'
+    description: 'quindarious.facebook::lang.plugin.description'
+    author: Quindarious
+    icon: oc-icon-facebook-official
+    homepage: ''

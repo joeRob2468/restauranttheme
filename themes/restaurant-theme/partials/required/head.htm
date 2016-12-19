@@ -7,7 +7,7 @@ description = "The page head. Contains style imports and title information."
   <meta name="description" content="{{ this.page.meta_description|default(this.theme.description) }}">
   <meta name="keywords" content="{{ this.theme.keywords }}">
   <meta name="author" content="{{ this.theme.site_author }}">
-  <title>{{ this.theme.site_name|striptags }} - {{ this.page.meta_title|default(this.page.title) }}</title>
+  <title>{{ this.page.meta_title|default(this.page.title) }} {% if not (this.page.baseFileName == 'home') %} - {{ this.theme.site_name|striptags }} {% endif %}</title>
   <link rel="canonical" href="{{ this.page.id|page }}" />
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   {% styles %}
