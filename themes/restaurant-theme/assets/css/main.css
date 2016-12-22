@@ -9963,7 +9963,7 @@ table.hover tr:nth-of-type(even):hover {
 
 .hero:not(.fullheight) .content {
   position: relative;
-  padding: 8em 0;
+  padding: 11em 0;
 }
 
 .hero.fullheight {
@@ -9977,15 +9977,19 @@ table.hover tr:nth-of-type(even):hover {
 }
 
 .logo {
-  line-height: 3em;
+  line-height: 4em;
 }
 
 nav a {
-  color: #FFFFFF;
+  color: #444444;
 }
 
 nav a:hover, nav a:active {
-  color: #F0F0F0;
+  color: #497b9e;
+}
+
+nav ul {
+  margin-bottom: 0;
 }
 
 nav ul li {
@@ -9994,8 +9998,8 @@ nav ul li {
 }
 
 nav ul li a {
-  padding: 0 0.3em;
-  line-height: 3em;
+  padding: 0 0.6em;
+  line-height: 4em;
 }
 
 footer {
@@ -10052,6 +10056,11 @@ footer {
 
 .columns.text-white {
   color: #FFFFFF;
+}
+
+.columns.text-2-columns {
+  column-count: 2;
+  column-count: 1;
 }
 
 .container {

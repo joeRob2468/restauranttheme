@@ -10,7 +10,7 @@
   &:not(.fullheight) .content
   {
     position: relative;
-    padding: 8em 0;
+    padding: 11em 0;
   }
   
   &.fullheight
@@ -27,19 +27,24 @@
 
 .logo
 {
-  line-height: 3em;
+  line-height: 4em;
 }
 
 nav
 {
   a
   {
-    color: #FFFFFF;
+    color: #444444;
   }
 
   a:hover, a:active
   {
-    color: #F0F0F0;
+    color: #497b9e;
+  }
+
+  ul
+  {
+    margin-bottom: 0;
   }
 
   ul li
@@ -49,8 +54,8 @@ nav
 
     a
     {
-      padding: 0 0.3em;
-      line-height: 3em;
+      padding: 0 0.6em;
+      line-height: 4em;
     }
   }
 }
@@ -128,6 +133,16 @@ footer
   &.text-white
   {
     color: #FFFFFF;
+  }
+
+  &.text-2-columns
+  {
+    column-count: 2;
+
+    @include breakpoint(small)
+    {
+      column-count: 1;
+    }
   }
 }
 
