@@ -35,68 +35,28 @@ cache = 10
     </div>
     <div class="row padded-top">
       <div class="large-12 columns text-2-columns">
-        <p>
-          Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Sed posuere consectetur est at lobortis. Maecenas faucibus mollis interdum. Nulla vitae elit libero, a pharetra augue. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
-        </p>
-        <p>
-          Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Aenean lacinia bibendum nulla sed consectetur.
-        </p>
-        <p>
-          Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Cras mattis consectetur purus sit amet fermentum.
-        </p>
-        <p>
-          Nulla vitae elit libero, a pharetra augue. Maecenas sed diam eget risus varius blandit sit amet non magna. Cras mattis consectetur purus sit amet fermentum. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.
-        </p>
+       {% component 'editable' file="home/head.htm" %}
       </div>
     </div>
   </div>
 </div>
 
-{#
-{% put imageSectionContent %}
-  {% component 'editable' file="home/hero-secondary.htm" %}
-  <br>
-  <a class="button light" href="{{ "menus" | page }}">View Our Menu</a>
-  <a class="button light" href="{{ "menus" | page }}">View Specials</a>
-{% endput %}
-{% partial "imagesection" image=('home/hero-menu.jpg'|media) textWhite=true imageAlt="Table" %}
-
-#}
-
 <div class="wrapper background-off-white">
   <div class="row padded">
     <div class="large-12 columns text-center">
+      <h2>Recent Updates</h2>
       {% partial "instagram" %}
     </div>
   </div>
 </div>
 
-{#
-{% put imageSectionContent %}
-  {% component 'editable' file="home/hero-staff.htm" %}
-{% endput %}
-{% partial "imagesection" image=('home/hero-staff.jpg'|media) imageAlt="The staff of Laughing Place." textWhite=true %}
-
-<div class="row padded large">
-  <div class="row">
-    <div class="large-4 columns">
-      {% component 'editable' file="home/staff-1.htm" %}
-    </div>
-    <div class="large-4 columns">
-      {% component 'editable' file="home/staff-2.htm" %}
-    </div>
-    <div class="large-4 columns">
-      {% component 'editable' file="home/staff-3.htm" %}
-    </div>
-  </div>
-
+<div class="wrapper background-white">
   <div class="row padded">
-    <div class="large-6 columns">
-      <img src="{{ 'home/food-4.jpg' | media }}" alt="Steak and potatoes">
+    <div class="large-7 columns">
+      {% component 'editable' file="about/location.htm" %}
     </div>
-    <div class="large-6 columns">
-      <img src="{{ 'home/food-5.jpg' | media }}" alt="Smoked salmon on rye bread.">
+    <div class="large-5 columns">
+      <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12363.793779334515!2d-94.5741131!3d39.2213366!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x6ae285280d6544c1!2sThe+Laughing+Place+Bakery!5e0!3m2!1sen!2sus!4v1482168093603' width='600' height='450' frameborder='0' style='border:0' allowfullscreen></iframe></div>
     </div>
   </div>
 </div>
-#}
