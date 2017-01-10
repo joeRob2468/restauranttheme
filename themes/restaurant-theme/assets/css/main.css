@@ -11,7 +11,7 @@
    * 2. Prevent iOS and IE text size adjust after device orientation change,
    *    without disabling user zoom.
    */
-@import url("https://fonts.googleapis.com/css?family=Droid+Serif|Roboto");
+@import url("https://fonts.googleapis.com/css?family=Droid+Serif|Kalam|Roboto");
 html {
   font-family: sans-serif;
   /* 1 */
@@ -10034,6 +10034,10 @@ footer {
   padding: 3em 0;
 }
 
+.row.padded.small {
+  padding: 1em 0;
+}
+
 .row.padded.large {
   padding: 6em 0;
 }
@@ -10046,12 +10050,20 @@ footer {
   padding: 3em 0 0 0;
 }
 
+.row.padded-top.small {
+  padding: 1em 0 0 0;
+}
+
 .row.padded-top.large {
   padding: 6em 0 0 0;
 }
 
 .row.padded-top.huge {
   padding: 10em 0 0 0;
+}
+
+.font-script {
+  font-family: "Kalam", script;
 }
 
 .columns.text-white {
