@@ -10,15 +10,10 @@ limit = 2
 cache = 10
 ==
 {% put heroContent %}
+  <img src="{{'home/logo.png' | media}}" alt="The Laughing Place Bakery">
   {% component 'editable' file="home/hero.htm" %}
 {% endput %}
-{% partial "common/hero" fullheight=false image=('home/hero.jpg'|media) imageAlt="Large Pie" textWhite=true %}
-
-{# <div class="row padded large">
-  <div class="large-12 columns text-center">
-    {% component 'editable' file="home/head.htm" %}
-  </div>
-</div> #}
+{% partial "common/hero" fullheight=false image=('home/hero.jpg'|media) imageAlt="The Laughing Place Bakery storefront" textWhite=true %}
 
 <div class="row padded large">
   <div class="large-12 columns">
