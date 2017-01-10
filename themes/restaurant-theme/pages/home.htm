@@ -18,6 +18,12 @@ cache = 10
 <div class="row padded large">
   <div class="large-12 columns">
     <div class="row">
+      <div class="large-12 columns text-2-columns">
+       {% component 'editable' file="home/head.htm" %}
+      </div>
+    </div>
+    {#
+    <div class="row padded">
       <div class="large-4 columns">
         <img src="{{ 'home/cupcakes.jpg' | media }}" class="cover" alt="Delicious cupcakes with browned icing.">
       </div>
@@ -28,11 +34,7 @@ cache = 10
         <img src="{{ 'home/gingercream.jpg' | media }}" class="cover" alt="Ginger cream cookies.">
       </div>
     </div>
-    <div class="row padded-top">
-      <div class="large-12 columns text-2-columns">
-       {% component 'editable' file="home/head.htm" %}
-      </div>
-    </div>
+    #}
   </div>
 </div>
 
