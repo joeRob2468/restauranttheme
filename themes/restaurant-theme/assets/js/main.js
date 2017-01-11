@@ -8,7 +8,7 @@ var scripts =
     objectFitImages('img.cover');
 
     // initialize vh unit buggyfill for mobile browsers.
-    window.viewportUnitsBuggyfill.init();
+    //window.viewportUnitsBuggyfill.init();
 
     // initialize skrollr if we're not on mobile
     if($('.parallax') && !(/Android|iPhone|iPad|iPod|BlackBerry|Windows Phone/i).test(navigator.userAgent || navigator.vendor || window.opera))
