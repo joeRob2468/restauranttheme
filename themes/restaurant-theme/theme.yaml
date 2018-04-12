@@ -1,6 +1,6 @@
-name: 'Restaurant Theme'
-description: 'A simple OctoberCMS theme for a simple website.'
+name: 'The Laughing Place Bakery'
+description: 'The Laughing Place Bakery Theme.'
 author: 'John Robert Boyer'
 homepage: 'http://www.boyerwebstudios.com'
-code: bws-restaurant-theme
+code: bws-laughing-place-bakery
 form: fields.yaml

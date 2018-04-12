@@ -1,18 +1,21 @@
 description = "A simple, catch-all layout for most pages."
 
 [editable]
+
+[googleTracker]
 ==
-<!doctype html>
-<html>
-  {% partial "required/head" %}
-
-  <body id="body">
-    {% partial "common/navigation" %}
-    
-    {% page %}
-
-    {% partial "common/footer" %}
-  </body>
-
-  {% partial "required/scripts" %}
+<!doctype html>
+<html>
+  {% partial "required/head" %}
+
+  <body id="body">
+    {% partial "common/navigation" %}
+    
+    {% page %}
+
+    {% partial "common/footer" %}
+  </body>
+
+  {% partial "required/scripts" %}
+  {% component 'googleTracker' %}
 </html>

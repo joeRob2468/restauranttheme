@@ -2,58 +2,57 @@ title = "The Laughing Place Bakery"
 url = "/"
 layout = "default"
 description = "The home page."
+meta_title = "The Laughing Place Bakery"
+meta_description = "The Laughing Place Bakery is a small bakery located in Gladstone that is passionate about good flavors."
 is_hidden = 0
-
-[userFeed instagramFeed]
-user_name = "thelaughingplacebakery"
-limit = 2
-cache = 10
+robot_index = "index"
+robot_follow = "follow"
 ==
-{% put heroContent %}
-  <img src="{{'home/logo.png' | media}}" alt="The Laughing Place Bakery">
-  {% component 'editable' file="home/hero.htm" %}
-{% endput %}
-{% partial "common/hero" fullheight=false image=('home/hero.jpg'|media) imageAlt="The Laughing Place Bakery storefront" textWhite=true %}
-
-<div class="row padded large">
-  <div class="large-12 columns">
-    <div class="row">
-      <div class="large-12 columns text-2-columns">
-       {% component 'editable' file="home/head.htm" %}
-      </div>
-    </div>
-    {#
-    <div class="row padded">
-      <div class="large-4 columns">
-        <img src="{{ 'home/cupcakes.jpg' | media }}" class="cover" alt="Delicious cupcakes with browned icing.">
-      </div>
-      <div class="large-4 columns">
-        <img src="{{ 'home/rolls.jpg' | media }}" class="cover" alt="Freshly baked cinnamon rolls.">
-      </div>
-      <div class="large-4 columns">
-        <img src="{{ 'home/gingercream.jpg' | media }}" class="cover" alt="Ginger cream cookies.">
-      </div>
-    </div>
-    #}
-  </div>
-</div>
-
-<div class="wrapper background-off-white">
-  <div class="row padded">
-    <div class="large-12 columns text-center">
-      <h2>What's New Today</h2>
-      {% partial "instagram" %}
-    </div>
-  </div>
-</div>
-
-<div class="wrapper background-white">
-  <div class="row padded">
-    <div class="large-7 columns">
-      {% component 'editable' file="about/location.htm" %}
-    </div>
-    <div class="large-5 columns">
-      <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12363.793779334515!2d-94.5741131!3d39.2213366!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x6ae285280d6544c1!2sThe+Laughing+Place+Bakery!5e0!3m2!1sen!2sus!4v1482168093603' width='600' height='450' frameborder='0' style='border:0' allowfullscreen></iframe></div>
-    </div>
-  </div>
+{% put heroContent %}
+  <img src="{{'home/logo.png' | media}}" alt="The Laughing Place Bakery">
+  {% component 'editable' file="home/hero.htm" %}
+{% endput %}
+{% partial "common/hero" fullheight=false image=('home/hero.jpg'|media) imageAlt="The Laughing Place Bakery storefront" textWhite=true %}
+
+<div class="row padded large">
+  <div class="large-12 columns">
+    <div class="row">
+      <div class="large-12 columns text-2-columns">
+       {% component 'editable' file="home/head.htm" %}
+      </div>
+    </div>
+    {#
+    <div class="row padded">
+      <div class="large-4 columns">
+        <img src="{{ 'home/cupcakes.jpg' | media }}" class="cover" alt="Delicious cupcakes with browned icing.">
+      </div>
+      <div class="large-4 columns">
+        <img src="{{ 'home/rolls.jpg' | media }}" class="cover" alt="Freshly baked cinnamon rolls.">
+      </div>
+      <div class="large-4 columns">
+        <img src="{{ 'home/gingercream.jpg' | media }}" class="cover" alt="Ginger cream cookies.">
+      </div>
+    </div>
+    #}
+  </div>
+</div>
+
+<!-- <div class="wrapper background-off-white">
+  <div class="row padded">
+    <div class="large-12 columns text-center">
+      <h2>What's New Today</h2>
+      {# {% partial "instagram" %} #}
+    </div>
+  </div>
+</div> -->
+
+<div class="wrapper background-white">
+  <div class="row padded">
+    <div class="large-7 columns">
+      {% component 'editable' file="about/location.htm" %}
+    </div>
+    <div class="large-5 columns">
+      <style>.embed-container { position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; } .embed-container iframe, .embed-container object, .embed-container embed { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }</style><div class='embed-container'><iframe src='https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12363.793779334515!2d-94.5741131!3d39.2213366!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x6ae285280d6544c1!2sThe+Laughing+Place+Bakery!5e0!3m2!1sen!2sus!4v1482168093603' width='600' height='450' frameborder='0' style='border:0' allowfullscreen></iframe></div>
+    </div>
+  </div>
 </div>

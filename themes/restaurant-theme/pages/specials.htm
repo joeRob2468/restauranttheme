@@ -2,47 +2,50 @@ title = "Daily Specials"
 url = "/specials"
 layout = "default"
 description = "Daily specials and deals"
+meta_description = "Our specials change from day to day, so take a peek and see what we'll be cooking up when you come in!"
 is_hidden = 0
+robot_index = "index"
+robot_follow = "follow"
 ==
-{% put heroContent %}
-  {% component 'editable' file="specials/hero.htm" %}
-{% endput %}
-{% partial "common/hero" fullheight=false image=('specials/hero.jpg'|media) imageAlt="Our display case full of delicious treats" textWhite=true %}
-
-<div class="row padded large">
-  <div class="large-12 columns text-center">
-    <div class="row">
-      <div class="large-12 columns text-left">
-        <h3 class="font-script">Tuesday</h3>
-        <p>Gluten Free all Day!  Come and try Aunt Janes Ugly Scones, Crustless Quiche, Flourless Chocolate Cake, and many other delicious treats!</p>
-        <p><em>We are closed Sunday and Monday.  Because we know flour particles can float in the air for up to 24 hrs., we reserve Tuesday as an exclusively gluten free day.  All items are baked fresh Tuesday morning and using utensils that are kept stored away in a plastic tub during the rest of the week.</em></p>
-      </div>
-    </div>
-    <div class="row padded-top small">
-      <div class="large-12 columns text-left">
-        <h3 class="font-script">Wednesday</h3>
-        <p>Bread Baking Day, Story and Snack time 10:00 am weekly during summer months</p>
-      </div>
-    </div>
-
-    <div class="row padded-top small">
-      <div class="large-12 columns text-left">
-        <h3 class="font-script">Thursday</h3>
-        <p>Cupcake day!!</p>
-      </div>
-    </div>
-    <div class="row padded-top small">
-      <div class="large-12 columns text-left">
-        <h3 class="font-script">Friday</h3>
-        <p>Pie Day and Bierocks</p>
-        <p><em>Savory Beef, cabbage and onions sautéed in butter and stuffed into a homestyle roll before being baked to golden perfection. Our bierocks sell out every week, so be sure to call ahead and reserve yours!</em></p>
-      </div>
-    </div>
-    <div class="row padded-top small">
-      <div class="large-12 columns text-left">
-        <h3 class="font-script">Saturday</h3>
-        <p>Biscuits and Gravy, Bread Baking Day</p>
-      </div>
-    </div>
-  </div>
+{% put heroContent %}
+  {% component 'editable' file="specials/hero.htm" %}
+{% endput %}
+{% partial "common/hero" fullheight=false image=('specials/hero.jpg'|media) imageAlt="Our display case full of delicious treats" textWhite=true %}
+
+<div class="row padded large">
+  <div class="large-12 columns text-center">
+    <div class="row">
+      <div class="large-12 columns text-left">
+        <h3 class="font-script">Tuesday</h3>
+        <p>Gluten Free all Day!  Come and try Aunt Janes Ugly Scones, Crustless Quiche, Flourless Chocolate Cake, and many other delicious treats!</p>
+        <p><em>We are closed Sunday and Monday.  Because we know flour particles can float in the air for up to 24 hrs., we reserve Tuesday as an exclusively gluten free day.  All items are baked fresh Tuesday morning and using utensils that are kept stored away in a plastic tub during the rest of the week.</em></p>
+      </div>
+    </div>
+    <div class="row padded-top small">
+      <div class="large-12 columns text-left">
+        <h3 class="font-script">Wednesday</h3>
+        <p>Bread Baking Day, Story and Snack time 10:00 am weekly during summer months</p>
+      </div>
+    </div>
+
+    <div class="row padded-top small">
+      <div class="large-12 columns text-left">
+        <h3 class="font-script">Thursday</h3>
+        <p>Cupcake day!!</p>
+      </div>
+    </div>
+    <div class="row padded-top small">
+      <div class="large-12 columns text-left">
+        <h3 class="font-script">Friday</h3>
+        <p>Pie Day and Bierocks</p>
+        <p><em>Savory Beef, cabbage and onions sautéed in butter and stuffed into a homestyle roll before being baked to golden perfection. Our bierocks sell out every week, so be sure to call ahead and reserve yours!</em></p>
+      </div>
+    </div>
+    <div class="row padded-top small">
+      <div class="large-12 columns text-left">
+        <h3 class="font-script">Saturday</h3>
+        <p>Biscuits and Gravy, Bread Baking Day</p>
+      </div>
+    </div>
+  </div>
 </div>

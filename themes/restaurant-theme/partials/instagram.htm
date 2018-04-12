@@ -1,33 +1,34 @@
-<div class="row padded instagram" data-equalizer>
-
-{% for m in instagramFeed.media %}
-  <div class="large-6 columns text-left" >
-    <div class="wrapper" data-equalizer-watch>
-      <a href="{{ m.getLink() }}" target="_blank">
-        <img class="cover" src="{{ m.getStandardResImage().url }}" alt="bakery">
-      </a>
-
-      <div class="content">
-        <div class="row meta">
-          <div class="small-6 columns text-left">
-            ❤ {{ m.getLikesCount() }} likes
-          </div>
-          <div class="small-6 columns text-right">
-            {{ m.getCreatedTime() | timestamptorelative }}
-          </div>
-        </div>
-        <p>
-         {{ m.getCaption().text | linkify }}
-        </p>
-
-        <div class="row">
-          <div class="large-12 columns text-center">
-            <a href="{{ m.getLink() }}" target="_blank" class="button">View on Instagram</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-{% endfor %}
-
+==
+<div class="row padded instagram" data-equalizer>
+
+{% for m in instagramFeed.media %}
+  <div class="large-6 columns text-left" >
+    <div class="wrapper" data-equalizer-watch>
+      <a href="{{ m.getLink() }}" target="_blank">
+        <img class="cover" src="{{ m.getStandardResImage().url }}" alt="bakery">
+      </a>
+
+      <div class="content">
+        <div class="row meta">
+          <div class="small-6 columns text-left">
+            ❤ {{ m.getLikesCount() }} likes
+          </div>
+          <div class="small-6 columns text-right">
+            {{ m.getCreatedTime() | timestamptorelative }}
+          </div>
+        </div>
+        <p>
+         {{ m.getCaption().text | linkify }}
+        </p>
+
+        <div class="row">
+          <div class="large-12 columns text-center">
+            <a href="{{ m.getLink() }}" target="_blank" class="button">View on Instagram</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endfor %}
+
 </div>

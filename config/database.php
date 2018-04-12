@@ -58,7 +58,7 @@ return [
             'port'      => 3306,
             'database'  => 'restauranttheme',
             'username'  => 'root',
-            'password'  => 'secret',
+            'password'  => 'root',
             'charset'   => 'utf8',
             'collation' => 'utf8_unicode_ci',
             'prefix'    => '',

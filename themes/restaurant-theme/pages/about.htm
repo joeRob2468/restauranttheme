@@ -2,15 +2,18 @@ title = "Our Story"
 url = "/about"
 layout = "default"
 description = "About us, our business, and our location."
+meta_description = "Curious about how we got started? This is the story of our business, our lives, and our Laughing Place."
 is_hidden = 0
+robot_index = "index"
+robot_follow = "follow"
 ==
-{% put heroContent %}
-  {% component 'editable' file="about/hero.htm" %}
-{% endput %}
-{% partial "common/hero" fullheight=false image=('about/snapshot.jpg'|media) imageAlt="A family snapshot of our kitchen" textWhite=true %}
-
-<div class="row padded large">
-  <div class="large-12 columns">
-    {% component 'editable' file="about/head.htm" %}
-  </div>
+{% put heroContent %}
+  {% component 'editable' file="about/hero.htm" %}
+{% endput %}
+{% partial "common/hero" fullheight=false image=('about/snapshot.jpg'|media) imageAlt="A family snapshot of our kitchen" textWhite=true %}
+
+<div class="row padded large">
+  <div class="large-12 columns">
+    {% component 'editable' file="about/head.htm" %}
+  </div>
 </div>
